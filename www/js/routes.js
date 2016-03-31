@@ -28,15 +28,6 @@ angular.module('starter.routes', [])
       }
     })
 
-  .state('app.portada', {
-      url: '/portada',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/portada.html'
-        }
-      }
-    })
-
     .state('app.playlists', {
       url: '/playlists',
       views: {
