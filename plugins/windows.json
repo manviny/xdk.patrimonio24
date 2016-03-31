@@ -6,10 +6,6 @@
     "config_munge": {
         "files": {}
     },
-    "installed_plugins": {
-        "cordova-plugin-x-toast": {
-            "PACKAGE_NAME": "HelloCordova"
-        }
-    },
+    "installed_plugins": {},
     "dependent_plugins": {}
 }
