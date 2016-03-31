@@ -1,1 +1,18 @@
-/* Empty. Add your own CSS if you like */
+/* Menú con imagen de fondo (o color) */
+
+.custom{
+	background: url(../img/background.jpg) no-repeat center center fixed !important; 
+	/* background:orange; */
+}
+
+.custom .item{
+	background-color:transparent;
+	border:none;
+	color:white;
+	
+}
+
+
+.custom .item-complex .item-content, .dark .item-radio .item-content{
+	background-color:transparent;
+} 
