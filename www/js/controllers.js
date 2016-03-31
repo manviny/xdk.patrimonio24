@@ -47,16 +47,22 @@ ionic.Platform.ready(function() {
 
            
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Dance', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('PlaylistsCtrl', function($scope, pw) {
+    pw.getLits().then(function(users){
+      $scope.playlists = users;
+    });
+
+
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('PlaylistCtrl', function($scope, $stateParams, pw) {
+
+    $scope.litId = $stateParams.litId;
+
+    pw.getLit($scope.litId).then(function(data){ 
+      $scope.lit = data;
+    });
+
 });
+
+

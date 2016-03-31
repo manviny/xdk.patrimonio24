@@ -38,7 +38,7 @@ angular.module('starter.routes', [])
     })
 
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/playlists/:litId',
     views: {
       'menuContent': {
         templateUrl: 'templates/playlist.html',
