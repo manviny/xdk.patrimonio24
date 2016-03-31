@@ -1,6 +1,8 @@
 /* Menú con imagen de fondo (o color) */
 
-
+body{
+	font-family: 'Open Sans', sans-serif;
+}
 
 .custom{
 	 
@@ -32,20 +34,23 @@
 
 .ayto{
 	background: 
-	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
 	url(../img/ayuntamiento.jpg) no-repeat center center fixed !important; 
+	
 }
 
 .clasificacion{
 	background: 
-	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
 	url(../img/clasificacion.png) no-repeat center center fixed !important; 
+	
 }
 
 .mapa{
 	background: 
-	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
 	url(../img/mapa.jpg) no-repeat center center fixed !important; 
+
 }
 
 hr{
