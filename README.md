@@ -1,4 +1,4 @@
-Ionic Framework Starter
+Llamadas a servicios externos
 =============================
 
 - 1.- Crear /js/factories.js y pegar el código
@@ -40,4 +40,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.routes', 'st
     });
 
 })
+```
+
+Pasar datos de una página a otra
+================================
+- 1.- En routes.js indicar el nombre de la variable, en este caso litID
+```js
+  .state('app.single', {
+    url: '/playlists/:litId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/playlist.html',
+        controller: 'PlaylistCtrl'
+      }
+    }
+  })
+```
+- 2.- En el controlador donde queremos usarlo usar $stateParams
+```js
+.controller('PlaylistCtrl', function($scope, $stateParams) {
+    $scope.litId = $stateParams.litId;
+});
+```
+
+- 3.- Pasamos el dato de la siguiente forma
+```js
+ href="#/app/playlists/{{playlist.id}}"
 ```
