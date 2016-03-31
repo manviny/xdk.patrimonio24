@@ -1,11 +1,17 @@
 /* Menú con imagen de fondo (o color) */
 
+
+
 .custom{
-	background: url(../img/background.jpg) no-repeat center center fixed !important; 
-	/* background:orange; */
+	 
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url(../img/background.jpg) no-repeat center center fixed !important;  
+	
+	
 }
 
-.custom .item{
+.menulista .item{
 	background-color:transparent;
 	border:none;
 	color:white;
@@ -13,6 +19,31 @@
 }
 
 
-.custom .item-complex .item-content, .dark .item-radio .item-content{
+.menulista .item-complex .item-content, .dark .item-radio .item-content{
 	background-color:transparent;
 } 
+
+.bar.bar-light{
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url(../img/background.jpg) no-repeat center center fixed !important; 
+
+}
+
+.ayto{
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url(../img/ayuntamiento.jpg) no-repeat center center fixed !important; 
+}
+
+.clasificacion{
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url(../img/clasificacion.png) no-repeat center center fixed !important; 
+}
+
+.mapa{
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url(../img/mapa.jpg) no-repeat center center fixed !important; 
+}

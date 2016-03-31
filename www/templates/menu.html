@@ -13,22 +13,22 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-energized">
-      <h1 class="title">Left</h1>
+    <ion-header-bar class="bar-light">
+      <h1 class="title" style="color:white;">Menú</h1>
     </ion-header-bar>
-    <ion-content class="custom">
+    <ion-content class="custom menulista">
       <ion-list>
         <ion-item menu-close ng-click="login()">
           Login
+        </ion-item>
+        <ion-item menu-close href="#/app/portada">
+          Portada
         </ion-item>
         <ion-item menu-close href="#/app/search">
           Buscar
         </ion-item>
         <ion-item menu-close href="#/app/browse">
           Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/portada">
-          Portada
         </ion-item>
         <ion-item menu-close href="#/app/playlists">
           Playlists
