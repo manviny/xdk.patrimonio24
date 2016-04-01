@@ -27,6 +27,7 @@ angular.module('starter.routes', [])
         }
       }
     })
+
     .state('app.playlists', {
       url: '/playlists',
       views: {
